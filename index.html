@@ -349,16 +349,20 @@
             display: flex;
             align-items: center;
             gap: 1rem;
+            width: 100%;
         }
         
         .carousel-viewport {
+            position: relative;
             flex: 1;
+            min-width: 0;
             overflow: hidden;
             border-radius: 40px;
             background: rgba(20, 12, 30, 0.35);
             border: 1px solid rgba(255, 255, 255, 0.08);
             box-shadow: 0 30px 60px -20px rgba(0, 0, 0, 0.8);
             aspect-ratio: 4 / 3;
+            touch-action: pan-y pinch-zoom;
         }
         
         .carousel-track {
@@ -384,6 +388,7 @@
             border-radius: 24px;
             pointer-events: none;
             user-select: none;
+            display: block;
         }
         
         .placeholder-slide .placeholder-bg {
@@ -691,6 +696,80 @@
             }
             .btn-glow {
                 padding: 1rem 2rem;
+            }
+            .glass {
+                border-radius: 28px;
+            }
+            .story-card {
+                border-radius: 24px;
+            }
+            .reason-card {
+                border-radius: 24px;
+            }
+            .btn-yes,
+            .btn-no {
+                padding: 1rem 2.2rem;
+                font-size: 1.4rem;
+                border-radius: 60px;
+            }
+            .carousel-wrapper {
+                gap: 0;
+            }
+            .carousel-viewport {
+                border-radius: 24px;
+                min-height: 220px;
+                height: auto;
+            }
+            .carousel-slide {
+                padding: 0.75rem;
+            }
+            .carousel-slide img {
+                border-radius: 16px;
+            }
+            .carousel-btn {
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                width: 34px;
+                height: 34px;
+                font-size: 1rem;
+                border-radius: 50%;
+                background: rgba(20, 12, 30, 0.65);
+                z-index: 3;
+            }
+            .carousel-btn:hover {
+                transform: translateY(-50%) scale(1.08);
+                background: rgba(236, 72, 153, 0.35);
+            }
+            .carousel-btn:active {
+                transform: translateY(-50%) scale(0.95);
+            }
+            .carousel-btn.prev {
+                left: 10px;
+            }
+            .carousel-btn.next {
+                right: 10px;
+            }
+            .placeholder-slide .placeholder-bg {
+                font-size: 1.4rem;
+                border-radius: 16px;
+            }
+            .modal-box {
+                padding: 1.8rem;
+                width: 92%;
+            }
+            .modal-text {
+                font-size: 1.2rem;
+            }
+            .modal-cursor {
+                height: 1.4rem;
+            }
+            .modal-close {
+                top: 12px;
+                right: 14px;
+                width: 34px;
+                height: 34px;
+                font-size: 1rem;
             }
         }
         /* yes modal */
