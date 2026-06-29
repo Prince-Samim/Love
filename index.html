@@ -1127,7 +1127,7 @@
                 title: '😉'
             }, {
                 icon: 'Your Dustami',
-                title: '😚'
+                title: '😫'
             }];
             const grid = document.getElementById('reasonsGrid');
             reasons.forEach(r => {
@@ -1244,7 +1244,7 @@
             const btnYes = document.getElementById('btnYes');
             const btnNo = document.getElementById('btnNo');
             const proposalMsg = document.getElementById('proposalMessage');
-            const noMessages = ["Hobe na🤭", "Oi dekho upore Yes likha ache😒", "Yes dite bolchi too😏", "Dekhcho hobe na🤭", "Ekhono No khuje beracche😩", "Yes de bolchi😒", "Pabi na , No Pabi na😒", "Tor jonno Yes ta rakha ache😒","Yes deeeeee😩"];
+            const noMessages = ["Hobe na🤭", "Oi dekho upore Yes likha ache😒", "Yes dite bolchi too😏", "Dekhcho hobe na🤭", "Ekhono No khuje beracche😩", "Yes de bolchi😒", "Pabi na , No Pabi na😒", "Tor jonno Yes ta rakha ache😒", "Yes deeeeee😩"];
 
             function moveNoButton() {
                 const rect = btnNo.getBoundingClientRect();
@@ -1485,6 +1485,28 @@
             setInterval(() => {
                 if (Math.random() > 0.6) {
                     const h = document.createElement('div');
+                    h.textContent = 'Anuu💞';
+                    h.className = 'floating-heart';
+                    h.style.left = Math.random() * window.innerWidth + 'px';
+                    h.style.bottom = '-20px';
+                    h.style.fontSize = (Math.random() * 1.4 + 0.6) + 'rem';
+                    h.style.animationDuration = (Math.random() * 4 + 4) + 's';
+                    document.body.appendChild(h);
+                    setTimeout(() => h.remove(), 5000);
+                }
+                if (Math.random() > 0.6) {
+                    const h = document.createElement('div');
+                    h.textContent = '😘';
+                    h.className = 'floating-heart';
+                    h.style.left = Math.random() * window.innerWidth + 'px';
+                    h.style.bottom = '-20px';
+                    h.style.fontSize = (Math.random() * 1.4 + 0.6) + 'rem';
+                    h.style.animationDuration = (Math.random() * 4 + 4) + 's';
+                    document.body.appendChild(h);
+                    setTimeout(() => h.remove(), 5000);
+                }
+                if (Math.random() > 0.6) {
+                    const h = document.createElement('div');
                     h.textContent = '❤️';
                     h.className = 'floating-heart';
                     h.style.left = Math.random() * window.innerWidth + 'px';
@@ -1500,7 +1522,7 @@
             document.addEventListener('click', function(e) {
                 for (let i = 0; i < 5; i++) {
                     const h = document.createElement('div');
-                    h.textContent = 'Anuu💗';
+                    h.textContent = '💞';
                     h.className = 'floating-heart';
                     h.style.left = (e.clientX + (Math.random() - 0.5) * 60) + 'px';
                     h.style.top = (e.clientY + (Math.random() - 0.5) * 40) + 'px';
